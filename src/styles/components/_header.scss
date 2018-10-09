@@ -1,22 +1,21 @@
 .header {
-    background: #20222b;
+    background: $off-black;
     color: white;
-    margin-bottom: 4.8rem; /* Put space between header and contents below */
-    padding: 1.6rem 0; /* 1.6rem space between top and bottom, 0 left and right */
-    text-align: center;
+    margin-bottom: $xl-size; /* Put space between header and contents below */
+    padding: $m-size 0; /* 1.6rem space between top and bottom, 0 left and right */
 }
 
 // BEM naming convention, block element modifier
 // block is the header
 // element is everything inside block, like text
 .header__title {
-    font-size: 3.2rem;
+    font-size: $l-size;
     margin: 0;
 }
 
 .header__subtitle {
-    color: #a5afd7;
-    font-size: 1.6rem;
+    color: $off-white;
+    font-size: $m-size;
     font-weight: 500;
     margin: 0;
 }
