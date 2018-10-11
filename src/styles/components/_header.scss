@@ -19,3 +19,11 @@
     font-weight: 500;
     margin: 0;
 }
+
+/* Used to make add option input box and button */
+/* More UI friendly on mobile devices */
+@media (max-width: $desktop-breakpoint) {
+    .header {
+        margin-bottom: $s-size;
+    }
+}

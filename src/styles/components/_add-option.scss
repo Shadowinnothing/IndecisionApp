@@ -2,6 +2,7 @@
 .add-option {
     display: flex;
     padding: $m-size;
+    flex-direction: column; /* Display options top to bottom */
 }
 
 .add-option__input {
@@ -9,7 +10,8 @@
     border: none;
     border-bottom: .3rem solid darken($dark-blue, 10%);
     flex-grow: 1;
-    margin-right: $s-size;
+    margin: 0 0 $s-size 0;
+    //margin-right: $s-size;
     color: $off-white;
     padding: $s-size;
 }
@@ -20,4 +22,16 @@
     font-style: italic;
     padding: 0 $m-size;
     margin: $m-size 0 0 0;
+}
+
+/* Used to make add option input box and button */
+/* More UI friendly on mobile devices */
+@media (min-width: $desktop-breakpoint) {
+    .add-option {
+        flex-direction: row; /* Large devices left right, small up and down */
+    }
+
+    .add-option__input {
+        margin: 0 $s-size 0 0; /* Stacks input element on top of button for mobile */
+    }
 }
